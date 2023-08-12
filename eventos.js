@@ -1,9 +1,15 @@
-var divBoton = document.getElementById("divBoton");
+var div = document.getElementById("div");
+var boton = document.getElementById("boton")
 
-divBoton.style.backgroundColor = "rgb(88, 229, 88)";
-divBoton.style.padding = "5px";
-divBoton.style.textAlign = "center";
+div.style.backgroundColor = "rgb(88, 229, 88)";
+div.style.padding = "5px";
+div.style.textAlign = "center";
 
-divBoton.addEventListener("click", function() {
+div.addEventListener("click", function() {
     alert("Hola! Soy el div");
+});
+
+boton.addEventListener("click", function() {
+    alert("Hola");
+    event.stopPropagation();
 });
